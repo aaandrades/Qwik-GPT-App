@@ -7,14 +7,11 @@ export default component$(() => {
       <main>
         <Header />
         <section>
+          {/* Content of {children} */}
           <Slot />
         </section>
       </main>
-      <footer>
-        <a href="https://www.builder.io/" target="_blank" rel="noopener">
-          Made with ♡ by Builder.io
-        </a>
-      </footer>
+      <footer>Made with ❤️ by Andres Andrade</footer>
     </>
   );
 });
