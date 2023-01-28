@@ -3,6 +3,9 @@ import styles from "./header.css?inline";
 
 export default component$(() => {
   useStylesScoped$(styles);
-
-  return <header>Header code here</header>;
+  return (
+    <header class="header-container">
+      <h1>Interview Ace</h1>
+    </header>
+  );
 });
