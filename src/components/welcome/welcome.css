@@ -15,6 +15,11 @@
   color: var(--white);
   border-radius: 14px 0px 0px 14px;
   width: 30%;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🥳</text></svg>")
+      16 0,
+    auto;
 }
 
 .welcome-container__items:last-child {
@@ -31,7 +36,7 @@
 
 .welcome-title {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
@@ -46,24 +51,7 @@
   max-height: 460px;
 }
 
-.navigation-button {
-  background-color: var(--tertiary);
-  color: var(--white);
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-top: 20px;
-  cursor: pointer;
-  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.7);
-}
-
-.navigation-button:hover {
-  animation: pulse 1s infinite;
-}
-
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .welcome-container__items:first-child {
     width: 50%;
   }
@@ -103,17 +91,5 @@
   }
   .welcome-title {
     font-size: 1.5rem;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
   }
 }

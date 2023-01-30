@@ -14,8 +14,8 @@ export const Welcome = component$(() => {
       <article class="welcome-container__items">
         <h1 class="welcome-title">Interview Ace</h1>
         <p class="welcome-description">
-          Interview Prep Tool: Practice with prompted questions and receive
-          instant feedback!
+          <strong>Interview Prep Tool: </strong>
+          Practice with prompted questions and receive instant feedback!
         </p>
       </article>
       <article class="welcome-container__items">
@@ -28,7 +28,7 @@ export const Welcome = component$(() => {
           />
         </div>
         <Link href="/questions">
-          <button type="button" title="Go ahead!" class="navigation-button">
+          <button type="button" title="Go ahead!" class="general-button">
             Let's go for it!
           </button>
         </Link>

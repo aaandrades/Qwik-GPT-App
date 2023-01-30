@@ -1,0 +1,25 @@
+.textfield-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.textfield-container__input {
+  border: 1px solid var(--tertiary);
+  border-radius: 6px;
+  outline: none;
+  padding: 10px;
+  transition: box-shadow ease-in-out 100ms;
+}
+
+.textfield-container__input:focus {
+  box-shadow: 0 0 0 1px var(--tertiary);
+  transition: box-shadow ease-in-out 100ms;
+}
+
+.textfield-container__label {
+  padding-left: 5px;
+  margin-bottom: 3px;
+  color: var(--tertiary);
+  font-weight: 500;
+}
