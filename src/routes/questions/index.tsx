@@ -45,9 +45,7 @@ export default component$(() => {
             onChange={$((value: string) => (store.experience = value))}
           />
         </div>
-        <DropdownContent>
-          <div>Opciones avanzadas</div>
-        </DropdownContent>
+        <DropdownContent />
         <button
           type="button"
           onClick$={() => getQuestion()}

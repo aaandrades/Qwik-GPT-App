@@ -1,0 +1,23 @@
+.dropdown-container {
+}
+.dropdown-container__button {
+  border: 1px solid #ff006e4f;
+  border-radius: 6px;
+  color: var(--tertiary);
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.show {
+  height: 200px;
+  opacity: 1;
+  transition: all 0.3s;
+  background-color: #ff006e0f;
+}
+
+.hide {
+  height: 0;
+  opacity: 0;
+  transition: all 0.2s;
+}
