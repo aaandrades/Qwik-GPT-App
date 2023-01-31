@@ -51,7 +51,7 @@ export default component$(() => {
           onClick$={() => getQuestion()}
           class="general-button"
         >
-          Get question
+          Get questions
         </button>
       </div>
     </section>

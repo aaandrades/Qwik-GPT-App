@@ -6,6 +6,7 @@ import {
   useStore,
 } from "@builder.io/qwik";
 import styles from "./dropdown-content.css?inline";
+import { InputRange } from "../input-range/InputRange";
 
 export const DropdownContent = component$(() => {
   useStylesScoped$(styles);
@@ -21,33 +22,27 @@ export const DropdownContent = component$(() => {
   const renderOptions = () => {
     return (
       <div class={dropdown.value ? "show" : "hide"}>
-        <label>Number of words</label>
-        <input
-          type="range"
-          min="2"
-          max="600"
-          title="TLC"
+        <InputRange
+          label="Number of words"
+          min={2}
+          max={600}
           value={store.words}
-          onInput$={$(
+          onChange={$(
             ({ target }: any) =>
               (store.words = +(target as HTMLInputElement).value)
           )}
         />
-        {store.words}
-        <label>Randomness</label>
-        <input
-          type="range"
-          min="0"
-          max="2"
-          title="TLC"
-          value={store.randomness}
+        <InputRange
+          label="Randomness"
+          min={0}
+          max={2}
           step="0.1"
-          onInput$={$(
+          value={store.randomness}
+          onChange={$(
             ({ target }: any) =>
               (store.randomness = +(target as HTMLInputElement).value)
           )}
         />
-        {store.randomness}
       </div>
     );
   };

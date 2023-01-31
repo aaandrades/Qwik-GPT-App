@@ -24,6 +24,7 @@
 }
 
 .questions-container__header--title {
+  text-align: center;
   color: var(--white);
   text-decoration: none;
 }

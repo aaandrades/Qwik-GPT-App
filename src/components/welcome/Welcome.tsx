@@ -4,7 +4,7 @@ import { QwikLottie } from "qwik-lottie";
 import styles from "./welcome.css?inline";
 
 // Animation
-import chatbot from "../../../public/chatbot.json";
+import chatbot from "../../animations/chatbot.json";
 
 export const Welcome = component$(() => {
   useStylesScoped$(styles);
