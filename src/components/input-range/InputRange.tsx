@@ -8,15 +8,16 @@ interface IProps {
   min: number;
   max: number;
   step?: string;
+  style?: string;
 }
 
 export const InputRange = component$(
-  ({ label, value, onChange, min, max, step = "1" }: IProps) => {
+  ({ label, value, onChange, min, max, step = "1", style = "" }: IProps) => {
     useStylesScoped$(styles);
 
     return (
-      <div class="input-range-container">
-        <label>{label}</label>
+      <div class={`input-range-container ${style}`}>
+        <label class="input-range-container__label">{label}</label>
         <input
           title={label}
           type="range"
@@ -25,8 +26,11 @@ export const InputRange = component$(
           min={min}
           max={max}
           step={step}
+          name={label}
         />
-        <span>{value}</span>
+        <output class="input_range-container__value" for={label}>
+          {value}
+        </output>
       </div>
     );
   }

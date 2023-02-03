@@ -1,4 +1,22 @@
 .input-range-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  height: min-content;
+  min-width: 160px;
+}
+
+.input-range-container__label {
+  padding: 5px 10px;
+  font-weight: bold;
+  color: var(--tertiary);
+}
+
+.input_range-container__value {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  font-size: 12px;
+  color: var(--tertiary);
 }

@@ -1,0 +1,29 @@
+.dropdown-select {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  height: min-content;
+  min-width: 160px;
+}
+
+.dropdown-select__select {
+  border: 1px solid #ff006e4f;
+  border-radius: 6px;
+  color: var(--tertiary);
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+  height: 37px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-select__option {
+  padding: 5px 10px;
+  cursor: pointer;
+  height: 37px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
