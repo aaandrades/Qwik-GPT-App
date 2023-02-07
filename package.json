@@ -41,6 +41,7 @@
     "vite-tsconfig-paths": "3.5.0"
   },
   "dependencies": {
+    "cohere-ai": "^5.0.2",
     "qwik-lottie": "^0.1.8"
   }
 }

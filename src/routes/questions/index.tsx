@@ -18,6 +18,11 @@ export default component$(() => {
   useStyles$(styles);
 
   const getQuestion = $(async () => {
+    const response = await fetch("/api", {
+      method: "GET",
+    });
+    const data = await response.json();
+    console.log(data.body);
     console.log(store);
   });
 
