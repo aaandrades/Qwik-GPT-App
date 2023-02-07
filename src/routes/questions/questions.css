@@ -56,7 +56,14 @@
   .questions-container {
     margin: 20px 10px;
   }
+
+  .questions-container__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
+
 @media screen and (max-width: 380px) {
   .questions-container__body--textfield {
     width: 100%;

@@ -19,6 +19,7 @@ export const InputRange = component$(
       <div class={`input-range-container ${style}`}>
         <label class="input-range-container__label">{label}</label>
         <input
+          class="input-test"
           title={label}
           type="range"
           value={value}

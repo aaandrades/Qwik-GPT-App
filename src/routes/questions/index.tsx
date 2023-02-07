@@ -5,16 +5,20 @@ import { Link } from "@builder.io/qwik-city";
 import { LabIcon } from "~/components/icons/Lab";
 import { DropdownContent } from "../../components/dropdown-content/DropdownContent";
 import { TextField } from "~/components/textfield/TextField";
+import type { IStore } from "~/interface/general.interfaces";
 
 export default component$(() => {
-  const store = useStore({
+  const store = useStore<IStore>({
     role: "",
     experience: "",
+    words: 300,
+    randomness: 0.6,
+    model: "xlarge",
   });
   useStyles$(styles);
 
   const getQuestion = $(async () => {
-    console.log(store.role);
+    console.log(store);
   });
 
   return (
@@ -45,14 +49,16 @@ export default component$(() => {
             onChange={$((value: string) => (store.experience = value))}
           />
         </div>
-        <DropdownContent />
-        <button
-          type="button"
-          onClick$={() => getQuestion()}
-          class="general-button"
-        >
-          Get questions
-        </button>
+        <DropdownContent store={store} />
+        <div class="questions-container__button">
+          <button
+            type="button"
+            onClick$={() => getQuestion()}
+            class="general-button"
+          >
+            Get questions
+          </button>
+        </div>
       </div>
     </section>
   );

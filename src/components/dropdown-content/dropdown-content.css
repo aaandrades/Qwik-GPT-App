@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  justify-content: space-between;
 }
 
 .dropdown-container__button {
@@ -13,6 +12,7 @@
   padding: 5px 10px;
   cursor: pointer;
   height: 37px;
+  transition: box-shadow ease-in-out 100ms;
 }
 
 .dropdown-container__button:focus {
@@ -50,5 +50,9 @@
   .dropdown-container__input-range {
     margin-bottom: 20px;
     width: 100%;
+  }
+
+  .show {
+    height: 300px;
   }
 }
