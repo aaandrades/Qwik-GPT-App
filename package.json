@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "cohere-ai": "^5.0.2",
+    "openai": "^3.2.1",
     "qwik-lottie": "^0.1.8"
   }
 }
