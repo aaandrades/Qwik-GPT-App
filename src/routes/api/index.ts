@@ -15,6 +15,7 @@ export const onGet: RequestHandler<ProductData | any> = async ({
   params,
 }: any) => {
   try {
+    console.log(params);
     const fakeAPI = "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";
     const configuration = new Configuration({
       apiKey: fakeAPI,
